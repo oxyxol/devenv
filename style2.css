@@ -1,0 +1,161 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+}
+
+.navbar {
+    border: 1px solid black;
+     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    height: 170px;
+    background-color: #fff;
+    padding: 10px 20px;
+}
+
+.top-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+.user-account{
+    position: relative;
+    left: -200px;
+}
+.user-account a {
+    text-decoration: none;
+    color: #333;
+}
+.user-account img{
+    position: relative;
+    top: 20px;
+    height: 50px;
+}
+.bottom-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.categories-btn button {
+    padding: 15px 40px;
+    background-color: #2bbef9;
+    color: white;
+    border: none;
+    border-radius: 40px;
+    cursor: pointer;
+      position: relative;
+    top: 50px;
+    left: 140px;
+}
+
+.search-bar {
+    position: relative;
+    top: -50px;
+    left: 200px;
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+    margin: 0 20px;
+    position: relative;
+}
+
+.search-bar input {
+    width: 70%;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding-right: 40px;
+    background-color: #f1f1f1;
+}
+
+.search-bar button {
+    position: relative;
+    left: 460px;
+    position: absolute;
+    right: 10px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.search-bar button img {
+    height: 20px;
+}
+
+.menu {
+    position: relative;
+    left: -920px;
+    top: 50px;
+    display: flex;
+    align-items: center;
+}
+
+.menu a {
+    position: relative;
+    left: 70px;
+    margin: 0 10px;
+    text-decoration: none;
+    color: #A9A9A9;
+}
+
+.cart {
+    position: relative;
+    left: 380px;
+    top: -100px;
+    display: flex;
+    align-items: center;
+}
+.cart p{
+    position: relative;
+    left:10px;
+}
+.cart img {
+    height: 55px;
+}
+
+.badge {
+    position: absolute;
+    top: -5px;
+    right: -10px;
+    background-color: #00f;
+    color: #fff;
+    border-radius: 50%;
+    padding: 2px 6px;
+    font-size: 12px;
+}
+.kop {
+    position: relative;
+    left: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; 
+}
+
+.kop h1 {
+    margin-bottom: 20px;
+}
+
+.kop button {
+    margin-bottom: 10px; 
+    background-color: #2bbef9;
+    color: white;
+    border: none;
+    height: 50px;
+    width: 340px;
+    text-align: left;
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+.feee{
+    position: relative;
+    left: 580px;
+    top: -390px;
+    color: #A9A9A9;
+}

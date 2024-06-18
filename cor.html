@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Меню</title>
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+
+    <div class="navbar">
+        <div class="top-bar">
+            <div class="logo">nurk3</div>
+            <div class="user-account">
+                <img src="2.png">
+                <a href="#">Моя учётная запись</a>
+            </div>
+        </div>
+        <div class="bottom-bar">
+            <div class="categories-btn">
+                <button>ВСЕ РУБРИКИ</button>
+            </div>
+            <div class="search-bar">
+                <input type="text" placeholder="Поиск по товарам...">
+                <button type="button" onclick="searchProducts()"><img src="search.png" alt="Search"></button>
+            </div>
+            <div class="menu">
+                <a href="#">КОРЗИНА</a>
+                <a href="#">МАГАЗИН</a>
+                <a href="#">МОЙ АККАУНТ</a>
+                <a href="#">ОФОРМЛЕНИЕ ЗАКАЗА</a>
+                <div class="cart">
+                    <img src="1.png" alt="Корзина">
+                    <p>Корзина</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="kop">
+        <h1>Мой аккаунт</h1>
+        <button onclick="loadPanel()">Панель управления</button>
+        <button onclick="loadOrders()">Заказы</button>
+        <button>Загрузки</button>
+        <button>Адреса</button>
+        <button>Анкета</button>
+        <button>Выйти</button>
+    </div>
+    <div class="feee" id="ordersContainer">Из главной страницы аккаунта вы можете посмотреть ваши недавние заказы, настроить платежный адрес и <br>адрес доставки, а также изменить пароль и основную информацию.</div>
+
+    <script>
+        function loadPanel() {
+            // Добавьте здесь функциональность для загрузки панели управления
+            alert('Функциональность "Панель управления" еще не реализована.');
+        }
+
+        function loadOrders() {
+            fetch('get_orders.php')
+                .then(response => response.json())
+                .then(data => {
+                    const ordersContainer = document.getElementById('ordersContainer');
+                    ordersContainer.innerHTML = ''; // Очистка предыдущего содержимого
+                    data.forEach(order => {
+                        const orderElement = document.createElement('div');
+                        orderElement.innerHTML = `<p>Заказ: ${order.item}, Количество: ${order.quantity}, Цена: ${order.price}</p>`;
+                        ordersContainer.appendChild(orderElement);
+                    });
+                })
+                .catch(error => console.error('Ошибка:', error));
+        }
+
+        function searchProducts() {
+            // Добавьте здесь функциональность для поиска товаров
+            alert('Функциональность поиска товаров еще не реализована.');
+        }
+    </script>
+</body>
+</html>

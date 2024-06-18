@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Магазин</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="navbar">
+        <div class="top-bar">
+            <div class="logo">CopyStar</div>
+            <div class="user-account">
+                <img src="2.png">
+                <a href="#">Моя учётная запись</a>
+            </div>
+        </div>
+        <div class="bottom-bar">
+            <div class="categories-btn">
+                <button>ВСЕ РУБРИКИ</button>
+            </div>
+            <div class="search-bar">
+                <input type="text" placeholder="Поиск по товарам...">
+                <button type="submit"><img src="search.png" alt="Search"></button>
+            </div>
+            <div class="menu">
+                <a href="cart.html">КОРЗИНА</a>
+                <a href="#">МАГАЗИН</a>
+                <a href="#">МОЙ АККАУНТ</a>
+                <a href="#">ОФОРМЛЕНИЕ ЗАКАЗА</a>
+                <div class="cart">
+                    <img src="1.png" alt="Корзина">
+                    <p>Корзина</p>
+                </div>
+            </div>
+        </div>
+    </div>
+<div class="wop">
+    <div class="shop">Главная/Магазин</div>
+    <div class="shop1">Магазин</div>
+    <div class="shop2">Предоставлено 7 товаров</div>
+</div>
+<div class="container">
+    <div class="main-content">
+
+        <div class="products">
+            <div class="product">
+                <img src="5.webp" alt="SwellPro Fisherman">
+                <h2>Водонепроницаемый квадрокоптер SwellPro Fisherman</h2>
+                <p class="price">430000,00 ₸</p>
+                <button class="button add-to-cart" data-id="1" data-name="SwellPro Fisherman" data-price="430000">В корзину</button>
+            </div>
+            <div class="product">
+                <img src="1.webp" alt="Autel Robotics Evo Nano+">
+                <h2>Квадрокоптер Autel Robotics Evo Nano+</h2>
+                <p><span class="old-price">855000,00 ₸</span><span class="price">150000,00 ₸</span></p>
+                <button class="button add-to-cart" data-id="2" data-name="Autel Robotics Evo Nano+" data-price="150000">В корзину</button>
+            </div>
+            <div class="product">
+                <img src="3.webp" alt="DJI Air 3">
+                <h2>Квадрокоптер DJI Air 3 (DJI RC-N2)</h2>
+                <p class="price">4222000,00 ₸</p>
+                <button class="button add-to-cart" data-id="3" data-name="DJI Air 3" data-price="4222000">В корзину</button>
+            </div>
+            <div class="product">
+                <img src="6.webp" alt="DJI Mini 3 Pro">
+                <h2>Квадрокоптер DJI Mini 3 Pro</h2>
+                <p class="price">375000,00 ₸</p>
+                <button class="button add-to-cart" data-id="4" data-name="DJI Mini 3 Pro" data-price="375000">В корзину</button>
+            </div>
+            <div class="product">
+                <img src="7.webp" alt="Parrot Anafi">
+                <h2>Квадрокоптер Parrot Anafi</h2>
+                <p class="price">250000,00 ₸</p>
+                <button class="button add-to-cart" data-id="5" data-name="Parrot Anafi" data-price="250000">В корзину</button>
+            </div>
+            <div class="product">
+                <img src="9.webp" alt="Yuneec Typhoon H">
+                <h2>Квадрокоптер Yuneec Typhoon H</h2>
+                <p class="price">520000,00 ₸</p>
+                <button class="button add-to-cart" data-id="6" data-name="Yuneec Typhoon H" data-price="520000">В корзину</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="sidebar">
+        <div class="widget">
+            <div class="fee">
+            <input type="text" placeholder="Поиск">
+            <button class="hi">Поиск</button>
+        </div>
+        </div>
+        <div class="widget">
+            <select>
+                <option>Исходная сортировка</option>
+            </select>
+        </div>
+        <div class="widget">
+            <h3>Dropdown Categories</h3>
+            <select>
+                <option>Без рубрики</option>
+            </select>
+        </div>
+        <div class="widget">
+            <h3>Архивы</h3>
+            <p>Март 2024</p>
+        </div>
+        <div class="widget">
+            <h3>Meta</h3>
+            <p>Управление сайтом</p>
+            <p>Выйти</p>
+        </div>
+        <div class="widget">
+            <h3>Tag Cloud</h3>
+            <!-- Add tags as needed -->
+        </div>
+    </div>
+</div>
+<script src="store.js"></script>
+</body>
+</html>
